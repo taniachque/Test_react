@@ -3,6 +3,8 @@ import './App.css';
 import Componente2 from './Componente2';
 import Componente3 from './Componente3';
 
+//Tomo App.js como componente 1.
+
 function App() {
   const [text, setText] = useState('');
 
