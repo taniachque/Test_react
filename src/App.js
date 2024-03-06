@@ -1,17 +1,21 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Componente2 from './Componente2';
 
 function App() {
   const [text, setText] = useState('');
 
+  const handleTextChange = (e) => {
+    setText(e.target.value);
+  };
+
   return (
     <div className="App">
       <div className="title">
-        <h1 style={{ color: text ? 'red' : 'black' }}>TITULO</h1>
+        <h1 style={{ color: text ? 'blue' : 'black' }}>TITULO</h1>
       </div>
       <div>
-        <Componente2 onChange={(e) => setText(e.target.value)}/>
+        <Componente2 onTextChange={handleTextChange} />
       </div>
     </div>
   );

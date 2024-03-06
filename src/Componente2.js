@@ -1,12 +1,16 @@
-import React, { useState} from 'react';
+import React from 'react';
 
-const Componente2 = () => {
-    const [text, setText] = useState('');
+const Componente2 = ({ onTextChange }) => {
+  return (
+    <div>
+      <input
+        type="text"
+        name=""
+        placeholder="Escriba un nombre"
+        onChange={onTextChange}
+      />
+    </div>
+  );
+};
 
-    return ( 
-        <input type="text" name="" value={text} placeholder="" onChange={(e) => setText(e.target.value)}/>
-     );
-}
- 
 export default Componente2;
-
