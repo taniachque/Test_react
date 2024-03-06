@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Componente2 from './Componente2';
+import Componente3 from './Componente3';
 
 function App() {
   const [text, setText] = useState('');
@@ -16,6 +17,9 @@ function App() {
       </div>
       <div>
         <Componente2 onTextChange={handleTextChange} />
+      </div>
+      <div>
+        <Componente3 texto={text}/>
       </div>
     </div>
   );
