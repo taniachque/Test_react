@@ -1,13 +1,18 @@
-
+import { useState } from 'react';
 import './App.css';
-import Componente1 from './Componente1';
+import Componente2 from './Componente2';
 
 function App() {
+  const [text, setText] = useState('');
+
   return (
     <div className="App">
-      <body>
-        <Componente1/>
-      </body>
+      <div className="title">
+        <h1 style={{ color: text ? 'red' : 'black' }}>TITULO</h1>
+      </div>
+      <div>
+        <Componente2 onChange={(e) => setText(e.target.value)}/>
+      </div>
     </div>
   );
 }
