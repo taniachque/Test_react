@@ -18,7 +18,7 @@ function App() {
         <h1 style={{ color: text ? 'blue' : 'black' }}>TITULO</h1>
       </div>
       <div>
-        <Componente2 onTextChange={handleTextChange} />
+        <Componente2 onTextChange={handleTextChange} className="componente2"/>
       </div>
       <div>
         <Componente3 texto={text}/>

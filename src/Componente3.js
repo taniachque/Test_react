@@ -13,9 +13,12 @@ const Componente3 = ({ texto }) => {
   const componentesLetras = generateletras(texto);
 
   return (
-    <div className="letras">
+    <div className='componente3'>
+        <div className="letras">
       {componentesLetras}
     </div>
+    </div>
+    
   );
 };
 

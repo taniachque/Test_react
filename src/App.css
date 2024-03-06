@@ -5,30 +5,6 @@
   min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .letras {
   display: flex;
   justify-content: space-around;
@@ -40,4 +16,24 @@
   padding: 20px;
   border: 4px solid #f6f4f4;
   background-color: #61dafb;
+}
+
+.componente2 {
+  border: 2px solid black;
+  padding: 30px; 
+}
+
+.componente2 input {
+  height: 45px;
+  width: 200px;
+  border: 2px;
+}
+
+.componente3 {
+  border: 2px solid black;
+  padding: 30px; 
+}
+
+.componente2, .componente3{
+  margin: 40px;
 }

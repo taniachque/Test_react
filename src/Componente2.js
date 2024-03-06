@@ -2,7 +2,7 @@ import React from 'react';
 
 const Componente2 = ({ onTextChange }) => {
   return (
-    <div>
+    <div className='componente2'>
       <input
         type="text"
         name=""
